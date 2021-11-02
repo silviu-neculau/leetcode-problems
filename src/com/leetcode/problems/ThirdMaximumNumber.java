@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class ThirdMaximumNumber {
     public static void main(String[] args) {
-        System.out.println((getThirdMax(new int[] {1,2,-2147483648})));
+        System.out.println((getThirdMaxNumber(new int[] {1,2,-2147483648})));
     }
 
-    public static int getThirdMax(int[] nums) {
+    public static int getThirdMaxNumber(int[] nums) {
         int firstMax = Integer.MIN_VALUE;
         int thirdMax = Integer.MIN_VALUE;
         int secondtMax = Integer.MIN_VALUE;
