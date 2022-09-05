@@ -8,15 +8,15 @@ public class StockProfit {
   }
 
   public static int maxProfit(int[] prices) {
-    int profitToday = 0, mediumProfit = 0;
-    int minPrice = Integer.MAX_VALUE;
+    int profitToday = 0, profit = 0;
+    int minPrice = prices[0];
     for (int i = 0; i < prices.length; i++) {
       if (prices[i] < minPrice) {
         minPrice = prices[i];
       }
       profitToday = prices[i] - minPrice;
-      if (mediumProfit < profitToday) mediumProfit = profitToday;
+      if (profit < profitToday) profit = profitToday;
     }
-    return mediumProfit;
+    return profit;
   }
 }
