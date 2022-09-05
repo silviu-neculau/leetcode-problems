@@ -1,2 +1,3 @@
-package com.leetcode.problems;public class SetMatrixZeroes {
-}
+package com.leetcode.problems;
+
+public class SetMatrixZeroes {}
