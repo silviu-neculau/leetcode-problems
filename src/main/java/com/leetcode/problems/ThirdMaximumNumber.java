@@ -1,10 +1,8 @@
 package com.leetcode.problems;
 
-import java.util.Arrays;
-
 public class ThirdMaximumNumber {
     public static void main(String[] args) {
-        System.out.println((getThirdMaxNumber(new int[] {1,2,-2147483648})));
+        System.out.println((getThirdMaxNumber(new int[] {1, 2, -2147483648})));
     }
 
     public static int getThirdMaxNumber(int[] nums) {
@@ -26,6 +24,5 @@ public class ThirdMaximumNumber {
         if (nums.length < 3) return firstMax;
 
         return thirdMax;
-
     }
 }
