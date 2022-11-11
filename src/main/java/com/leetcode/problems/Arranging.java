@@ -2,7 +2,6 @@ package com.leetcode.problems;
 
 // https://leetcode.com/problems/arranging-coins/
 
-
 public class Arranging {
 
     public static void main(String[] args) {
@@ -16,7 +15,9 @@ public class Arranging {
             k = left + (right - left) / 2;
             current = k * (k + 1) / 2;
 
-            if (current == n) return (int) k;
+            if (current == n) {
+                return (int) k;
+            }
 
             if (n < current) {
                 right = k - 1;
